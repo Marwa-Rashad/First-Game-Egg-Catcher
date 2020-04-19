@@ -1,0 +1,91 @@
+<html>
+
+<head>
+
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/index_style.css">
+
+
+</head>
+
+<body>
+   <!--Scores and lives counter-->
+<div class="container pt-2 counter">
+<div class="row justify-content-between text-white">
+    <div class="score ">
+        <p class="font-weight-bold">Score <span id="score">0</span></p>
+    </div>
+    <div class="life">
+        <p class="font-weight-bold">Life <span id="life">10</span></p>
+    </div>
+</div>
+</div>
+<!--Hens and eggs-->
+<div class="container" id="hens">
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="col-xs-3 offset-1  position-relative flex-column d-flex justify-content-center align-items-center">
+            <img class="w-50 hen" src="images/Happy_hen.svg" alt="">
+            <img src="images/Happy_Egg.svg" class="position-absolute egg" alt="" id="egg1">
+        </div>
+
+        <div class="col-xs-3 offset-1  position-relative flex-column d-flex justify-content-center align-items-center">
+            <img class="w-50 hen" src="images/Happy_hen.svg" alt="">
+            <img src="images/Happy_Egg.svg" class="position-absolute egg" alt="" id="egg2">
+        </div>
+
+        <div class="col-xs-3 offset-1  position-relative flex-column d-flex justify-content-center align-items-center">
+            <img class="w-50 hen" src="images/Happy_hen.svg" alt="">
+            <img src="images/Happy_Egg.svg" class="position-absolute egg" alt="" id="egg3">
+        </div>
+    </div>
+</div>
+<!--Audio-->
+<audio id="scoreAudio">
+    <source src="sounds/score.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="gameAudio">
+    <source src="sounds/happy chicken.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="gameOverAudio">
+    <source src="sounds/game over.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+<!--Game Controls-->
+<div class="container" id="play">
+    
+    <div class="position-relative text-center d-flex flex-column rounded-pill gameStart justify-content-center mx-auto my-5 align-items-center col-sm-7 px-4 py-5"> 
+    <div class=""><h1 class="title text-white font-weight-bolder">HAPPY EGGS</h1></div>
+    <div class="btn1 position-absolute"><button class="btn btn-lg px-5 badge-pill text-white font-weight-bold col-sm-12" id="playBtn" onclick="start()">Play</button></div>
+
+</div>
+</div>
+
+<!--Basket-->
+
+<div class="basket">
+    <img src="images/Basket.svg" class="position-relative" alt="" id="basket">
+</div>
+
+
+<!--Broken Egg-->
+
+<div class="container" id="brokenEggs">
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="col-xs-3 offset-1 position-relative flex-column d-flex justify-content-center align-items-center">
+            <img class="w-50 brokenEgg" src="images/Broken_Egg.svg" alt="" id="brokenEgg1">
+        </div>
+
+        <div class="col-xs-3 offset-1 position-relative flex-column d-flex justify-content-center align-items-center" >
+            <img class="w-50 brokenEgg" src="images/Broken_Egg.svg" alt="" id="brokenEgg2">
+        </div>
+
+        <div class="col-xs-3 offset-1 position-relative flex-column d-flex justify-content-center align-items-center">
+            <img class="w-50 brokenEgg" src="images/Broken_Egg.svg" alt="" id="brokenEgg3">
+        </div>
+    </div>
+</div>
+    <script src="js/first.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+
+body {
+    background-image: url('../images/Background_Night.svg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+}
+
+.counter {
+    font-size: 1.5rem;
+}
+
+.btn {
+    font-size: 2rem;;
+    background-color: #ff5f84;
+    border: 4px solid #fff;
+}
+
+.btn1 {
+    top:80%;
+}
+
+.btn2 {
+    top:85%;
+}
+.title {
+    font-size: 4em;
+}
+.gameStart, .gameEnd {
+    background-color: #4C4660;
+    border: 4px solid #FF4571;
+}
+
+.basket img {
+    width: 100px;
+}
+
+
+.hen {
+ animation-name: chickenPop;
+ animation-timing-function: linear;
+ animation-duration: .75s;
+ animation-iteration-count: infinite;
+ animation-direction: alternate;
+
+}
+@keyframes chickenPop {
+    from {transform: none;}
+    to {transform: scale(1.1, 1.1);}
+}
+
+.egg {
+    z-index: -1;
+}
+
+
+.brokenEgg {
+    opacity: 0;
+}
