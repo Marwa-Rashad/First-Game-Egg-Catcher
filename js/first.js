@@ -19,7 +19,7 @@ function start(){
   playControls.style.opacity = 0;
   gameAudio();
 
-  eggFunction = setInterval(eggDown, 500);
+  eggFunction = setInterval(eggDown, 300);
 
 }
 
@@ -53,11 +53,11 @@ document.body.addEventListener('mousemove', function(e){
 
 
     eggList[1].style.top = eTop2  + "px";
-    eTop2 += 30;
+    eTop2 += 40;
 
 
     eggList[2].style.top = eTop3  + "px";
-    eTop3 += 30;
+    eTop3 += 20;
   } 
 
  
@@ -90,8 +90,9 @@ document.body.addEventListener('mousemove', function(e){
         break;
             }
 
-    } else if  (eggList[i].getBoundingClientRect().top > 600) {
-    
+    } else if  (eggList[i].getBoundingClientRect().top > 580) {
+      brokenEggs.style.opacity = 1;
+
       eggList[i].style.opacity = 1;
       life-=1;
       eggList[i].style.display = "none";        
